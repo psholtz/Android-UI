@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/layout1"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<!-- TEXTVIEW 1 -->
+	<TextView android:textColor="#cccccc"
+		android:gravity="center_horizontal|center_vertical" android:text="TextView"
+		android:id="@+id/textView1" android:layout_width="106dip"
+		android:textSize="20sp" android:layout_alignParentLeft="true"
+		android:layout_height="120dip"></TextView>
+
+	<!-- TEXTVIEW 3 -->
+	<TextView android:textColor="#cccccc" android:text="TextView"
+		android:id="@+id/textView3" android:layout_width="106dip"
+		android:textSize="18sp" android:layout_below="@+id/textView1"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_height="120dip" android:layout_alignLeft="@+id/textView1"
+		android:layout_alignRight="@+id/textView1"></TextView>
+
+	<!-- TEXTVIEW 2 -->
+	<TextView android:textColor="#cccccc" android:text="TextView"
+		android:id="@+id/textView2" android:gravity="center_horizontal|center_vertical"
+		android:layout_width="106dip" android:layout_height="120dip"
+		android:layout_toRightOf="@+id/textView1" android:layout_alignTop="@+id/textView1"></TextView>
+
+	<!-- TEXTVIEW 5 -->
+	<TextView android:text="TextView" android:id="@+id/textView5"
+		android:textSize="20sp" android:gravity="center_vertical|center_horizontal"
+		android:layout_width="108dip" android:layout_toRightOf="@+id/textView2"
+		android:layout_height="120dip" android:layout_alignTop="@+id/textView2"
+		android:layout_alignBottom="@+id/textView2"></TextView>
+
+	<!-- TEXTVIEW 4 -->
+	<TextView android:textColor="#cccccc" android:text="TextView"
+		android:textSize="20sp" android:id="@+id/textView4"
+		android:layout_width="106dip" android:gravity="center_vertical|center_horizontal"
+		android:layout_below="@+id/textView2" android:layout_height="120dip"
+		android:layout_alignLeft="@+id/textView2" android:layout_alignRight="@+id/textView2"></TextView>
+
+	<!-- TEXTVIEW 6 -->
+	<TextView android:text="TextView" android:id="@+id/textView6"
+	android:textSize="15sp"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_width="108dip" android:layout_toRightOf="@+id/textView4"
+		android:layout_height="120dip" android:layout_alignTop="@+id/textView4"
+		android:layout_alignBottom="@+id/textView4"></TextView>
+</RelativeLayout>
