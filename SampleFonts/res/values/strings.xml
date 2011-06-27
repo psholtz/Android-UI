@@ -2,4 +2,10 @@
 <resources>
     <string name="hello">Hello World, SampleFonts!</string>
     <string name="app_name">SampleFonts</string>
+    <color name="greenColor">#01aa01</color>
+    <color name="redColor">#ff0101</color>
+    <color name="blueColor">#0101ff</color>
+    <color name="yellowColor">#aaaa01</color>
+    <color name="cyanColor">#01ffff</color>
+    <color name="purpleColor">#ff01ff</color>
 </resources>

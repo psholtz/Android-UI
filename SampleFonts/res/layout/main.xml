@@ -9,41 +9,84 @@
 		android:gravity="center_horizontal|center_vertical" android:text="TextView"
 		android:id="@+id/textView1" android:layout_width="106dip"
 		android:textSize="20sp" android:layout_alignParentLeft="true"
-		android:layout_height="120dip"></TextView>
+		android:background="@+color/greenColor" android:layout_height="120dip"></TextView>
 
 	<!-- TEXTVIEW 3 -->
 	<TextView android:textColor="#cccccc" android:text="TextView"
 		android:id="@+id/textView3" android:layout_width="106dip"
 		android:textSize="18sp" android:layout_below="@+id/textView1"
 		android:gravity="center_horizontal|center_vertical"
-		android:layout_height="120dip" android:layout_alignLeft="@+id/textView1"
-		android:layout_alignRight="@+id/textView1"></TextView>
+		android:background="@+color/blueColor" android:layout_height="120dip"
+		android:layout_alignLeft="@+id/textView1" android:layout_alignRight="@+id/textView1"></TextView>
+
+	<!-- TEXTVIEW 7 -->
+	<TextView android:layout_below="@+id/textView3"
+		android:layout_height="120sp" android:layout_width="106sp"
+		android:textSize="25sp" android:gravity="center_horizontal|center_vertical"
+		android:text="TextView" android:id="@+id/textView7"
+		android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/textView3"></TextView>
+
+	<!-- TEXTVIEW 10 -->
+	<TextView android:layout_below="@+id/textView7"
+		android:textSize="20sp" android:layout_height="120sp"
+		android:layout_width="106sp" android:text="TextView" android:id="@+id/textView10"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignLeft="@+id/textView7" android:layout_alignRight="@+id/textView7"></TextView>
 
 	<!-- TEXTVIEW 2 -->
 	<TextView android:textColor="#cccccc" android:text="TextView"
 		android:id="@+id/textView2" android:gravity="center_horizontal|center_vertical"
 		android:layout_width="106dip" android:layout_height="120dip"
-		android:layout_toRightOf="@+id/textView1" android:layout_alignTop="@+id/textView1"></TextView>
+		android:background="@+color/redColor" android:layout_toRightOf="@+id/textView1"
+		android:layout_alignTop="@+id/textView1"></TextView>
 
 	<!-- TEXTVIEW 5 -->
 	<TextView android:text="TextView" android:id="@+id/textView5"
 		android:textSize="20sp" android:gravity="center_vertical|center_horizontal"
 		android:layout_width="108dip" android:layout_toRightOf="@+id/textView2"
 		android:layout_height="120dip" android:layout_alignTop="@+id/textView2"
-		android:layout_alignBottom="@+id/textView2"></TextView>
+		android:background="@+color/cyanColor" android:layout_alignBottom="@+id/textView2"></TextView>
 
 	<!-- TEXTVIEW 4 -->
 	<TextView android:textColor="#cccccc" android:text="TextView"
 		android:textSize="20sp" android:id="@+id/textView4"
-		android:layout_width="106dip" android:gravity="center_vertical|center_horizontal"
+		android:background="@+color/yellowColor" android:layout_width="106dip"
+		android:gravity="center_vertical|center_horizontal"
 		android:layout_below="@+id/textView2" android:layout_height="120dip"
 		android:layout_alignLeft="@+id/textView2" android:layout_alignRight="@+id/textView2"></TextView>
 
+	<!-- TEXTVIEW 8 -->
+	<TextView android:layout_below="@+id/textView4"
+		android:layout_height="120sp" android:layout_width="106sp"
+		android:textSize="20sp" android:text="TextView" android:id="@+id/textView8"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignLeft="@+id/textView4" android:layout_alignRight="@+id/textView4"></TextView>
+
+	<!-- TEXTVIEW 11 -->
+	<TextView android:layout_below="@+id/textView8"
+		android:layout_height="120sp" android:layout_width="106sp"
+		android:textSize="20sp" android:text="TextView" android:id="@+id/textView11"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignLeft="@+id/textView8" android:layout_alignRight="@+id/textView8"></TextView>
+
 	<!-- TEXTVIEW 6 -->
 	<TextView android:text="TextView" android:id="@+id/textView6"
-	android:textSize="15sp"
-		android:gravity="center_horizontal|center_vertical"
+		android:textSize="15sp" android:gravity="center_horizontal|center_vertical"
 		android:layout_width="108dip" android:layout_toRightOf="@+id/textView4"
 		android:layout_height="120dip" android:layout_alignTop="@+id/textView4"
-		android:layout_alignBottom="@+id/textView4"></TextView>
+		android:background="@+color/purpleColor" android:layout_alignBottom="@+id/textView4"></TextView>
+
+	<!-- TEXTVIEW 9 -->
+	<TextView android:layout_below="@+id/textView6"
+		android:layout_height="120sp" android:layout_width="108sp"
+		android:textSize="20sp" android:text="TextView" android:id="@+id/textView9"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignLeft="@+id/textView6" android:layout_alignRight="@+id/textView6"></TextView>
+
+	<!-- TEXTVIEW 12 -->
+	<TextView android:layout_below="@+id/textView9"
+		android:textSize="22sp" android:layout_height="120sp"
+		android:layout_width="108sp" android:text="TextView" android:id="@+id/textView12"
+		android:gravity="center_horizontal|center_vertical"
+		android:layout_alignLeft="@+id/textView9" android:layout_alignRight="@+id/textView9"></TextView>
 </RelativeLayout>
