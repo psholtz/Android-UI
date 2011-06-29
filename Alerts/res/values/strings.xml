@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alerts</string>
+    <string name="ToastShort">Toast Short</string>
+    <string name="ToastLong">Toast Long</string>
+    <string name="DialogOne">Dialog One</string>
+    <string name="DialogTwo">Dialog Two</string>
+    <string name="DialogThree">Dialog Three</string>
+    <string name="Notification">Notification</string>
+    <string name="ToastShortText">You clicked the short Toast!</string>
+    <string name="ToastLongText">You clicked the long Toast!</string>
+    <string name="DialogOneMsg">This dialog has one button!</string>
+    <string name="DialogTwoMsg">This dialog has two buttons!</string>
+    <string name="DialogThreeMsg">This dialog has three buttons!</string>
+    <string name="NotificationMsg">This is an important alert!</string>
+</resources>

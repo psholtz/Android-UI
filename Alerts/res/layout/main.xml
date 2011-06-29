@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:text="@string/ToastShort" android:id="@+id/button1"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+		
+	<Button android:text="@string/ToastLong" android:id="@+id/button2"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+		
+	<Button android:text="@string/DialogOne" android:id="@+id/button3"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+		
+	<Button android:text="@string/DialogTwo" android:id="@+id/button4"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+		
+	<Button android:text="@string/DialogThree" android:id="@+id/button5"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+		
+	<Button android:text="@string/Notification" android:id="@+id/button6"
+		android:layout_width="150dip" android:layout_height="40dip"></Button>
+</LinearLayout>
