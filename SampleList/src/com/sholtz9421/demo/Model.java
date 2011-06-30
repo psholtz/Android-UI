@@ -2,7 +2,10 @@ package com.sholtz9421.demo;
 
 public class Model {
 	public static final String TAG = "SampleList";
-	public static final String[] NAMES = { "New York", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
+	public static final String[] NAMES = { 
+			"London", "New York", "Hong Kong", "Paris", 
+			"Singapore", "Tokyo", "Sydney", "Milan", "Shanghai", "Beijing",
+			"Madrid", "Moscow","Seoul", "Toronto", "Brussels" };
 
 	private String name;
 	private boolean selected; 

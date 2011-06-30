@@ -3,7 +3,7 @@ package com.sholtz9421.demo;
 import java.util.List;
 
 import android.app.Activity;
-import android.graphics.Color;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -45,17 +45,11 @@ public class InteractiveArrayAdapter extends ArrayAdapter<Model> {
 				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
 					Model element = (Model)viewHolder.checkbox.getTag();
 					element.setSelected(buttonView.isChecked());
+					
+					// dump the model state to console; 
+					introspect(); 
 				}
 			});
-			
-			// modify the pictures used; 
-			switch ( position ) {
-			case 0:
-				viewHolder.image.setImageResource(R.drawable.newyork1);	
-				break;
-			}
-			
-			viewHolder.image.setBackgroundColor(Color.GREEN);
 
 			// combine them;
 			view.setTag(viewHolder);
@@ -68,5 +62,20 @@ public class InteractiveArrayAdapter extends ArrayAdapter<Model> {
 		holder.text.setText(list.get(position).getName());
 		holder.checkbox.setChecked(list.get(position).isSelected());
 		return view; 
+	}
+	
+	public void introspect() {
+		Model m; 
+		String s; 
+		Log.v(Model.TAG,"***");
+		Log.v(Model.TAG,"*** Introspect Model State");
+		Log.v(Model.TAG,"*** ----------------------");
+		for ( int i=0; i < list.size(); ++i ) {
+			m = (Model)list.get(i); 
+			s = "*** City: " + m.getName(); 
+			s += m.isSelected() ? " (TRUE)" : "";
+			Log.v(Model.TAG, s);
+		}
+		Log.v(Model.TAG,"***");
 	}
 }

@@ -22,16 +22,9 @@ public class SampleList extends ListActivity {
     
     private List<Model> getModel() { 
     	List<Model> list = new ArrayList<Model>();
-    	list.add(get(Model.NAMES[0]));
-    	list.add(get(Model.NAMES[1]));
-    	list.add(get(Model.NAMES[2]));
-    	list.add(get(Model.NAMES[3]));
-    	list.add(get(Model.NAMES[4]));
-    	list.add(get(Model.NAMES[5]));
-    	list.add(get(Model.NAMES[6]));
-    	list.add(get(Model.NAMES[7]));
-    	list.add(get(Model.NAMES[8]));
-    	list.add(get(Model.NAMES[9]));
+    	for ( int i=0; i < Model.NAMES.length; ++i ) {
+    		list.add(get(Model.NAMES[i]));
+    	}
     	return list;
     }
     
